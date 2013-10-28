@@ -1,0 +1,23 @@
+{
+    "name": "catserver",
+    "version": "0.1.0",
+    "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+    "description": "Cat server",
+    "homepage": "http://cat.cloudcmd.io",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/coderaiser/catserver.git"
+    },
+    "scripts": {
+        "start": "app.js"
+    },
+    "subdomain": "cat",
+    "dependencies": {
+        "express": "3.4.x"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.4.x"
+    },
+    "main": "app.js"
+}
