@@ -5,16 +5,18 @@
         express     = require('express'),
         fs          = require('fs'),
         
-        PORT        = 80,
+        PORT        = 1234,
         dir         = './img/',
         app         = express();
-
+    
     http.createServer(app).listen(PORT);
-
+    
+    console.log('server: PORT');
+    
     app.get('/', function(req, res) {
         res.redirect('/cat.png');
     });
-
+    
     app.get('/cat.png', function(req, res) {
         fs.readdir(dir, function(error, files) {
             var random  = Math.random() * 10,
