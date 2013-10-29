@@ -20,8 +20,9 @@
     
     app.get('/cat.png', function(req, res) {
         fs.readdir(dir, function(error, files) {
-            var random, count, number, path, name, type;
-        
+            var random, count, number, path, name, type,
+                ONE_MINUTE  = 3600;
+            
             if (error)
                 res.send(error);
             else {
@@ -33,6 +34,9 @@
                 type    = mime.lookup(path);
                 
                 res.contentType(type);
+                res.setHeader('Cache-Control', 
+                    'public, max-age=' + ONE_MINUTE);
+                
                 send(res, path);
                 console.log(number, name);
             }
