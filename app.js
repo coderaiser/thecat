@@ -19,16 +19,20 @@
     
     app.get('/cat.png', function(req, res) {
         fs.readdir(dir, function(error, files) {
-            var random  = Math.random() * 10,
-                number  = Math.round(random),
-                name    = files && files[number];
-            
-            console.log(number, name);
-            
+            var random, count, number, name;
+        
             if (error)
                 res.send(error);
-            else
+            else {
+                count   = files.length -1,
+                random  = count * Math.random(),
+                number  = Math.round(random),
+                name    = files[number];
+                
+                console.log(number, name);
+                
                 send(res, dir + name);
+            }
         });
     });
 

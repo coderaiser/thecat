@@ -6,7 +6,7 @@
     "homepage": "http://cat.cloudcmd.io",
     "repository": {
         "type": "git",
-        "url": "git://github.com/coderaiser/catserver.git"
+        "url": "git://github.com/coderaiser/thecat.git"
     },
     "scripts": {
         "start": "app.js"
