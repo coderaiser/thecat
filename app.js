@@ -12,7 +12,7 @@
     
     http.createServer(app).listen(PORT);
     
-    console.log('server: PORT');
+    console.log('server:' + PORT);
     
     app.get('/', function(req, res) {
         res.redirect('/cat.png');
