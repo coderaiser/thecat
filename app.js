@@ -38,7 +38,7 @@
             }
         });
     });
-
+    
     function send(res, name, callback) {
         var read   = fs.createReadStream(name),
             error   = function (error) {
