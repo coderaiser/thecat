@@ -60,4 +60,4 @@
             read.on('end', success);
         });
     }
-})()
+})();
