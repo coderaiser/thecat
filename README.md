@@ -23,3 +23,13 @@ or Web Page.
 Install
 ===============
 [![NPM_INFO][NPM_INFO_IMG]][NPM_INFO_URL]
+
+Who use?
+===============
+Not many people but a couple cat lovers are.
+
+- [Coderaiser](http://coderaiser.github.io "Coderaiser")
+- [Polietielana](http://polietilena.github.io "Polietilena")
+- [Cloud Commander](http://cloudcmd.io "Cloud Commander")
+
+If you had not found it search carefully (p.s. look 404 page ;)).
