@@ -17,7 +17,7 @@ To get the cat just drop this code to Markdown:
 
 or Web Page.
 ```
-  ![The cat](http://cat.cloudcmd.io/cat.png)
+  <img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
 ```
 
 Install
