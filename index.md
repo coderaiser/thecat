@@ -15,11 +15,13 @@ Simple cat server. Get new cat on every request.
 Get the cat ![The Cat](http://status-ok.cloudcmd.io/cat.cloudcmd.io/cat.png "Status")
 ===============
 To get the cat just drop this code to Markdown:
+
 ```
   ![The cat](http://cat.cloudcmd.io/cat.png)
 ```
 
 or Web Page.
+
 ```
   <img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
 ```
