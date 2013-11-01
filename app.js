@@ -3,6 +3,7 @@
     
     var http        = require('http'),
         express     = require('express'),
+        mime        = require('mime'),
         fs          = require('fs'),
         
         PORT        = 1234,
@@ -11,7 +12,7 @@
     
     http.createServer(app).listen(PORT);
     
-    console.log('server: PORT');
+    console.log('server:' + PORT);
     
     app.get('/', function(req, res) {
         res.redirect('/cat.png');
@@ -19,19 +20,25 @@
     
     app.get('/cat.png', function(req, res) {
         fs.readdir(dir, function(error, files) {
-            var random, count, number, name;
-        
+            var random, count, number, path, name, type,
+                ONE_MINUTE  = 3600;
+            
             if (error)
                 res.send(error);
             else {
                 count   = files.length -1,
                 random  = count * Math.random(),
                 number  = Math.round(random),
-                name    = files[number];
+                name    = files[number],
+                path    = dir + name;
+                type    = mime.lookup(path);
                 
+                res.contentType(type);
+                res.setHeader('Cache-Control', 
+                    'public, max-age=' + ONE_MINUTE);
+                
+                send(res, path);
                 console.log(number, name);
-                
-                send(res, dir + name);
             }
         });
     });
@@ -53,4 +60,4 @@
             read.on('end', success);
         });
     }
-})()
+})();
