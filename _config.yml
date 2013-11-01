@@ -11,3 +11,4 @@ canonical       : coderaiser/thecat
 repoName        : coderaiser/thecat/edit/dev/HELP.md
 improveText     : "Find typo? Help fix it."
 repoSource      : coderaiser/thecat
+image           : http://cat.cloudcmd.io/cat.png
