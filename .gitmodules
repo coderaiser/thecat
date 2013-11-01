@@ -1,0 +1,3 @@
+[submodule "cloudcmd-io-layouts"]
+	path = cloudcmd-io-layouts
+	url = git://github.com/coderaiser/cloudcmd-io-layouts
