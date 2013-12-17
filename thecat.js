@@ -21,21 +21,21 @@
     app.get('/cat.png', function(req, res) {
         fs.readdir(dir, function(error, files) {
             var random, count, number, path, name, type,
-                ONE_MINUTE  = 3600;
+                ONE_HOUR    = 3600;
             
             if (error)
                 res.send(error);
             else {
-                count   = files.length -1,
-                random  = count * Math.random(),
-                number  = Math.round(random),
-                name    = files[number],
-                path    = dir + name;
-                type    = mime.lookup(path);
+                count       = files.length -1,
+                random      = count * Math.random(),
+                number      = Math.round(random),
+                name        = files[number],
+                path        = dir + name;
+                type        = mime.lookup(path);
                 
                 res.contentType(type);
                 res.setHeader('Cache-Control', 
-                    'public, max-age=' + ONE_MINUTE);
+                    'public, max-age=' + ONE_HOUR);
                 
                 send(res, path);
                 console.log(number, name);
