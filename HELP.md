@@ -12,13 +12,13 @@ Get the cat ![The Cat](http://status-ok.cloudcmd.io/host/cat.cloudcmd.io/cat.png
 To get the cat just drop this code to Markdown:
 
 ```
-  ![The cat](http://cat.cloudcmd.io/cat.png)
+![The cat](http://cat.cloudcmd.io/cat.png)
 ```
 
 or Web Page.
 
-```
-  <img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
+```html
+<img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
 ```
 
 Install
