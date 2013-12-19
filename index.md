@@ -6,8 +6,7 @@ The Cat [![NPM version][NPMIMGURL]][NPMURL]
 ===============
 [NPMIMGURL]:                https://badge.fury.io/js/thecat.png
 [NPM_INFO_IMG]:             https://nodei.co/npm/thecat.png?downloads=true&&stars
-[NPMURL]:                   https://npmjs.org/package/thecat
-[NPM_INFO_URL]:             https://npmjs.org/package/thecat "npm"
+[NPMURL]:                   https://npmjs.org/package/thecat "npm"
 Simple cat server. Get new cat on every request.
 
 ![The cat](http://cat.cloudcmd.io/cat.png "The Cat")
@@ -17,18 +16,18 @@ Get the cat ![The Cat](http://status-ok.cloudcmd.io/host/cat.cloudcmd.io/cat.png
 To get the cat just drop this code to Markdown:
 
 ```
-  ![The cat](http://cat.cloudcmd.io/cat.png)
+![The cat](http://cat.cloudcmd.io/cat.png)
 ```
 
 or Web Page.
 
-```
-  <img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
+```html
+<img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
 ```
 
 Install
 ===============
-[![NPM_INFO][NPM_INFO_IMG]][NPM_INFO_URL]
+[![NPM_INFO][NPM_INFO_IMG]][NPMURL]
 
 Who use?
 ===============
