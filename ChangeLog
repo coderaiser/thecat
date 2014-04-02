@@ -1,0 +1,6 @@
+2013.11.01, v0.2.0
+
+feature:
+- (app) add count
+- (img) add 35
+- (app) radnom count: 10 - > files.length
