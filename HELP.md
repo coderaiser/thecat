@@ -35,6 +35,6 @@ Not many people but a couple cat lovers are.
 
 If you had not found it search carefully (p.s. look 404 page ;)).
 
-How Come?
+How come?
 ===============
 [This](http://iconka.com/ "Iconka") man makes a cats, I'm making [The Cat](http://coderaiser.github.io/thecat).
