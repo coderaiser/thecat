@@ -1,6 +1,6 @@
 {
     "name": "thecat",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
     "description": "The cat - get new cat on every request",
     "homepage": "http://cat.cloudcmd.io",
@@ -14,7 +14,9 @@
     "subdomain": "cat",
     "dependencies": {
         "express": "3.4.x",
-        "mime" : "1.2.x"
+        "mime" : "1.2.x",
+        "util.io":"0.8.x",
+        "util-pipe":"0.8.x"
     },
     "license": "MIT",
     "engines": {
