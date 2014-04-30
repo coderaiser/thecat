@@ -5,6 +5,8 @@
         express     = require('express'),
         mime        = require('mime'),
         fs          = require('fs'),
+        utilIO      = require('util.io'),
+        utilPipe    = require('util-pipe'),
         
         PORT        = 1234,
         dir         = './img/',
@@ -37,27 +39,22 @@
                 res.setHeader('Cache-Control', 
                     'public, max-age=' + ONE_HOUR);
                 
-                send(res, path);
+                sendFile(res, path);
                 console.log(number, name);
             }
         });
     });
     
-    function send(res, name, callback) {
-        var read   = fs.createReadStream(name),
-            error   = function (error) {
-                res.send(error);
-            },
-            success = function () {
-                if (typeof callback === 'function')
-                    callback(name);
-            };
-        
-        res.on('error', error);
-        read.on('error', error);
-        read.on('open', function() {
-            read.pipe(res);
-            read.on('end', success);
+      function sendFile(res, name, callback) {
+        utilPipe.create({
+            from    : name,
+            write   : res,
+            callback: function(error) {
+                if (error)
+                    res.send(error, 404);
+                else
+                    utilIO.exec(callback, name);
+            }
         });
     }
 })();
