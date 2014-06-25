@@ -5,8 +5,8 @@
         express     = require('express'),
         mime        = require('mime'),
         fs          = require('fs'),
-        utilIO      = require('util.io'),
-        utilPipe    = require('util-pipe'),
+        utilIO      = require('util-io'),
+        pipeIO      = require('pipe-io'),
         
         PORT        = 1234,
         dir         = './img/',
@@ -46,15 +46,11 @@
     });
     
       function sendFile(res, name, callback) {
-        utilPipe.create({
-            from    : name,
-            write   : res,
-            callback: function(error) {
-                if (error)
-                    res.send(error, 404);
-                else
-                    utilIO.exec(callback, name);
-            }
+        pipeIO.create(name, res, function(error) {
+            if (error)
+                res.send(error, 404);
+            else
+                utilIO.exec(callback, name);
         });
     }
 })();

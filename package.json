@@ -1,26 +1,28 @@
 {
-    "name": "thecat",
-    "version": "0.2.1",
-    "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
-    "description": "The cat - get new cat on every request",
-    "homepage": "http://cat.cloudcmd.io",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/coderaiser/thecat.git"
-    },
-    "scripts": {
-        "start": "app.js"
-    },
-    "subdomain": "cat",
-    "dependencies": {
-        "express": "3.4.x",
-        "mime" : "1.2.x",
-        "util.io":"0.8.x",
-        "util-pipe":"0.8.x"
-    },
-    "license": "MIT",
-    "engines": {
-        "node": ">=0.4.x"
-    },
-    "main": "app.js"
+  "name": "thecat",
+  "version": "0.2.2",
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+  "description": "The cat - get new cat on every request",
+  "homepage": "http://cat.cloudcmd.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/thecat.git"
+  },
+  "scripts": {
+    "start": "app.js"
+  },
+  "subdomain": "cat",
+  "dependencies": {
+    "express": "3.4.x",
+    "mime": "1.2.x",
+    "pipe-io": "^0.9.3",
+    "util-io": "^1.2.0",
+    "util-pipe": "0.8.x",
+    "util.io": "0.8.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.4.x"
+  },
+  "main": "app.js"
 }
