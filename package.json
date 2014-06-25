@@ -16,7 +16,7 @@
     "express": "3.4.x",
     "mime": "1.2.x",
     "pipe-io": "^0.9.3",
-    "util-io": "^1.2.0",
+    "util-io": "^1.2.0"
   },
   "license": "MIT",
   "engines": {
