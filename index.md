@@ -11,7 +11,7 @@ Simple cat server. Get new cat on every request.
 
 ![The cat](http://cat.cloudcmd.io/cat.png "The Cat")
 
-Get the cat ![The Cat](http://status-io.cloudcmd.io/host/cat.cloudcmd.io/cat.png "Status")
+Get the cat ![The Cat](http://status-ok.cloudcmd.io/host/cat.cloudcmd.io/cat.png "Status")
 ===============
 To get the cat just drop this code to Markdown:
 
@@ -29,6 +29,26 @@ Install
 ===============
 [![NPM_INFO][NPM_INFO_IMG]][NPMURL]
 
+How to use?
+===============
+
+```js
+var http        = require('http'),
+    express     = require('express'),
+    thacat      = require('thecat'),
+    PORT        = 1234,
+    app         = express();
+
+http.createServer(app)
+    .listen(PORT);
+
+app.use(thacat({
+    prefix: '/cat.png'
+}));
+
+```
+
+
 Who use?
 ===============
 Not many people but a couple cat lovers are.
@@ -39,6 +59,6 @@ Not many people but a couple cat lovers are.
 
 If you had not found it search carefully (p.s. look 404 page ;)).
 
-How Come?
+How come?
 ===============
 [This](http://iconka.com/ "Iconka") man makes a cats, I'm making [The Cat](http://coderaiser.github.io/thecat).
