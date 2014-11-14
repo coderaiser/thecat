@@ -1,3 +1,2 @@
 node_modules
-out
-error
+npm-debug.log
