@@ -9,18 +9,21 @@
     "url": "git://github.com/coderaiser/thecat.git"
   },
   "scripts": {
-    "start": "app.js"
+    "start": "bin/thecat.js"
   },
   "subdomain": "cat",
   "dependencies": {
-    "express": "3.4.x",
-    "mime": "1.2.x",
-    "pipe-io": "^0.9.3",
-    "util-io": "^1.2.0"
+    "express": "~4.10.2",
+    "files-io": "~1.2.0",
+    "mime": "~1.2.0",
+    "ponse": "~1.2.5"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=0.4.x"
+    "node": ">=0.4"
   },
-  "main": "app.js"
+  "main": "lib/thecat.js",
+  "bin": {
+    "thecat": "bin/thecat.js"
+  }
 }

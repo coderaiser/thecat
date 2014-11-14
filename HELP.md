@@ -25,6 +25,26 @@ Install
 ===============
 [![NPM_INFO][NPM_INFO_IMG]][NPMURL]
 
+How to use?
+===============
+
+```js
+var http        = require('http'),
+    express     = require('express'),
+    thacat      = require('thecat'),
+    PORT        = 1234,
+    app         = express();
+
+http.createServer(app)
+    .listen(PORT);
+
+app.use(thacat({
+    prefix: '/cat.png'
+}));
+
+```
+
+
 Who use?
 ===============
 Not many people but a couple cat lovers are.
