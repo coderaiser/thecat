@@ -18,4 +18,4 @@ If you had not found it search carefully (p.s. look 404 page ;)).
 
 How Come?
 ===============
-[This](http://iconka.com/ "Iconka") man makes a cats, I'm making [The Cat](http://coderaiser.github.io/thecat).
+[This](http://iconka.com/ "Iconka") man makes cats, I'm making [The Cat](http://coderaiser.github.io/thecat).
