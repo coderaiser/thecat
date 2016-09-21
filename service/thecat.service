@@ -1,0 +1,15 @@
+[Unit]
+Description=The Cat
+ 
+[Service]
+TimeoutStartSec=0
+Restart=always
+User=coderaiser
+
+WorkingDirectory=/home/coderaiser/thecat
+ 
+ExecStart=/home/coderaiser/.nvm/versions/node/v6.6.0/bin/node bin/thecat.js
+ 
+[Install]
+WantedBy=multi-user.target
+
