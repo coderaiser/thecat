@@ -2,11 +2,11 @@
 
 'use strict';
 
-var http        = require('http'),
-    express     = require('express'),
-    thacat      = require('..'),
-    PORT        = 1234,
-    app         = express();
+var http = require('http');
+var express = require('express');
+var thacat = require('..');
+var PORT = 1234;
+var app = express();
 
 http.createServer(app).listen(PORT);
 
