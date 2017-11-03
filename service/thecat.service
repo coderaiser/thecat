@@ -1,14 +1,14 @@
 [Unit]
-Description=Cloud Commander
+Description=The Cat
  
 [Service]
 TimeoutStartSec=0
 Restart=always
 User=coderaiser
 
-WorkingDirectory=/home/coderaiser/cloudcmd
+WorkingDirectory=/home/coderaiser/thecat
  
-ExecStart=/home/coderaiser/.nvm/versions/node/v8.1.4/bin/node /home/coderaiser/cloudcmd/bin/cloudcmd.js
+ExecStart=/home/coderaiser/.bin/node.js /home/coderaiser/thecat/bin/thecat.js
  
 [Install]
 WantedBy=multi-user.target
