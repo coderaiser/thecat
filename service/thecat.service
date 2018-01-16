@@ -8,7 +8,9 @@ User=coderaiser
 
 WorkingDirectory=/home/coderaiser/thecat
  
-ExecStart=/home/coderaiser/.bin/node.js /home/coderaiser/thecat/bin/thecat.js
+Environment=NODE_VERSION=node
+
+ExecStart=/home/coderaiser/.nvm/nvm-exec /home/coderaiser/thecat/bin/thecat.js
  
 [Install]
 WantedBy=multi-user.target
