@@ -9,7 +9,8 @@
     "url": "git://github.com/coderaiser/thecat.git"
   },
   "scripts": {
-    "start": "bin/thecat.js"
+    "start": "bin/thecat.js",
+    "lint": "eslint lib"
   },
   "subdomain": "cat",
   "dependencies": {
@@ -25,5 +26,9 @@
   "main": "lib/thecat.js",
   "bin": {
     "thecat": "bin/thecat.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-plugin-node": "^7.0.1"
   }
 }
