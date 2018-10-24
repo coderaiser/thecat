@@ -17,7 +17,7 @@
     "express": "^4.13.3",
     "files-io": "^3.0.0",
     "mime": "^2.0.0",
-    "ponse": "^2.0.0"
+    "ponse": "^3.0.1"
   },
   "license": "MIT",
   "engines": {
