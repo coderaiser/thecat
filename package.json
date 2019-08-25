@@ -28,7 +28,7 @@
     "thecat": "bin/thecat.js"
   },
   "devDependencies": {
-    "eslint": "^5.7.0",
+    "eslint": "^6.2.2",
     "eslint-plugin-node": "^7.0.1"
   }
 }
