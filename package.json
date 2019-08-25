@@ -34,5 +34,8 @@
     "eslint-plugin-putout": "^2.0.0",
     "madrun": "^2.5.0",
     "putout": "^5.8.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
