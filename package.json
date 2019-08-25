@@ -9,8 +9,9 @@
     "url": "git://github.com/coderaiser/thecat.git"
   },
   "scripts": {
-    "start": "bin/thecat.js",
-    "lint": "eslint lib"
+    "start": "madrun start",
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint"
   },
   "subdomain": "cat",
   "dependencies": {
@@ -29,6 +30,9 @@
   },
   "devDependencies": {
     "eslint": "^6.2.2",
-    "eslint-plugin-node": "^9.1.0"
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^2.5.0",
+    "putout": "^5.8.0"
   }
 }

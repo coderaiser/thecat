@@ -2,21 +2,21 @@
 
 'use strict';
 
-var http = require('http');
-var express = require('express');
-var thacat = require('..');
-var PORT = 1234;
-var app = express();
+const http = require('http');
+const express = require('express');
+const thacat = require('..');
+const PORT = 1234;
+const app = express();
 
 http.createServer(app).listen(PORT);
 
 console.log('server:' + PORT);
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     res.redirect('/cat.png');
 });
 
 app.use(thacat({
-    prefix: '/cat.png'
+    prefix: '/cat.png',
 }));
 
