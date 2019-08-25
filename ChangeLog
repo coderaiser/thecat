@@ -1,3 +1,11 @@
+2019.08.25, v3.0.2
+
+feature:
+- (thecat) add support of madrun, putout
+- (package) eslint-plugin-node v9.1.0
+- (package) eslint v6.2.2
+
+
 2018.10.24, v3.0.1
 
 feature:
