@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "eslint": "^6.2.2",
-    "eslint-plugin-node": "^7.0.1"
+    "eslint-plugin-node": "^9.1.0"
   }
 }
