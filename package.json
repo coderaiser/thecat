@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "main": "lib/thecat.js",
   "bin": {
