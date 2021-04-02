@@ -1,4 +1,4 @@
-import names from './names.js';
+import names from './names.ts';
 
 const count = names.length - 1;
 const dir = 'img';
