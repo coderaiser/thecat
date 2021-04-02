@@ -1,14 +1,15 @@
-The Cat [![NPM version][NPMIMGURL]][NPMURL]
-===============
-[NPMIMGURL]:                https://badge.fury.io/js/thecat.png
-[NPM_INFO_IMG]:             https://nodei.co/npm/thecat.png?downloads=true&&stars
-[NPMURL]:                   https://npmjs.org/package/thecat "npm"
+# The Cat [![NPM version][NPMIMGURL]][NPMURL]
+
+[NPMIMGURL]: https://badge.fury.io/js/thecat.png
+[NPM_INFO_IMG]: https://nodei.co/npm/thecat.png?downloads=true&&stars
+[NPMURL]: https://npmjs.org/package/thecat "npm"
+
 Simple cat server. Get new cat on every request.
 
 ![The cat](http://cat.cloudcmd.io/cat.png "The Cat")
 
-Get the cat ![The Cat](http://status-io.cloudcmd.io/host/cat.cloudcmd.io/cat.png "Status")
-===============
+# Get the cat ![The Cat](http://status-io.cloudcmd.io/host/cat.cloudcmd.io/cat.png "Status")
+
 To get the cat just drop this code to Markdown:
 
 ```
@@ -21,19 +22,18 @@ or Web Page.
 <img alt="The Cat" src=http://cat.cloudcmd.io/cat.png />
 ```
 
-Install
-===============
+# Install
+
 [![NPM_INFO][NPM_INFO_IMG]][NPMURL]
 
-How to use?
-===============
+# How to use?
 
 ```js
-var http        = require('http'),
-    express     = require('express'),
-    thacat      = require('thecat'),
-    PORT        = 1234,
-    app         = express();
+var http        = require('http');
+var express     = require('express');
+var thacat      = require('thecat');
+var PORT        = 1234;
+var app         = express();
 
 http.createServer(app)
     .listen(PORT);
@@ -44,9 +44,8 @@ app.use(thacat({
 
 ```
 
+# Who use?
 
-Who use?
-===============
 Not many people but a couple cat lovers are.
 
 - [Coderaiser](http://coderaiser.github.io "Coderaiser")
@@ -55,6 +54,6 @@ Not many people but a couple cat lovers are.
 
 If you had not found it search carefully (p.s. look 404 page ;)).
 
-How come?
-===============
+# How come?
+
 [This](http://iconka.com/ "Iconka") man makes a cats, I'm making [The Cat](http://coderaiser.github.io/thecat).

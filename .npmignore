@@ -1,5 +1,6 @@
 service
 .*
+*.ts
 
-madrun.js
-
+yarn-error.log
+coverage
